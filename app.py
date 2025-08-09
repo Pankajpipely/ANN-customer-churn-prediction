@@ -9,13 +9,13 @@
 # model = tf.keras.models.load_model("model.h5")
 
 # # load the encoder and scaler
-# with open("E:\Project_ANN_deep_learning(customer will leave bank or not)\onehot_encoder_geo.pkl","rb") as file:
+# with open("onehot_encoder_geo.pkl","rb") as file:
 #     onehot_encoder_geo = pickle.load(file)
 
-# with open("E:\Project_ANN_deep_learning(customer will leave bank or not)\label_encoder_gender.pkl","rb") as file:
+# with open("label_encoder_gender.pkl","rb") as file:
 #     label_encoder_gender = pickle.load(file)
 
-# with open("E:\Project_ANN_deep_learning(customer will leave bank or not)\scaler.pkl","rb") as file:
+# with open("scaler.pkl","rb") as file:
 #     scaler = pickle.load(file) 
 
 # # Streamlit app
@@ -141,3 +141,4 @@ if prediction_prob > 0.5:
     st.error(f"⚠️ The customer is likely to churn (probability: {prediction_prob:.2%})")
 else:
     st.success(f"✅ The customer is not likely to churn (probability: {1 - prediction_prob:.2%})")
+
